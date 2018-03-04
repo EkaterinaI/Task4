@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartblog</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+        <header>
+          <div class="container"> 
+            <div class="row">
+              <div class="logo col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img src="img/blog.png">
+              </div>
+              <div id="root" class= "signForm col-lg-8 col-md-8 сol-sm-12 col-xs-12"></div>
+            </div>
+            <div class="row">
+              <div class="menu col-lg-9 col-md-9 col-sm-12 col-xs-12  ">
+                <ul>
+                  <a href="#"><li style=" border-radius: 5px 0 0 0; border-right: 1px solid rgb(216,216,216); ">Home</li></a>
+                  <a href="#"><li>About</li></a>
+                  <a href="#"><li>SERVICES</li></a>
+                  <a href="#"><li>blog</li></a>
+                  <a href="#"><li style="border: none">Contact</li></a>
+                </ul>
+              </div>		
+            </div>
+          </div>
+        </header>
+        <div class="container ">
+          <div class="row">
+            <div class="content col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              <div id="post">
+                <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
+                <p class="postHeader"> Posted by <a href="#">John</a> on 3 january 2017 - <a href="#">10 comments</a></p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  <br>
+                  <br>	
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <br>
+                <a id="continue" href="#">Continue reading</a>
+              </div>
+              <div id="post">
+                <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
+                <p class="postHeader"> Posted by <a href="#">John</a> on 3 january 2017 - <a href="#">10 comments</a></p>
+                <br>
+                <p class="openP">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <br>
+                <a id="continue" href="#">Continue reading</a>
+              </div>
+            </div>
+            
+            <div class="side col-lg-3 col-md-3 col-sm-12 col-xs-12" id="sideBar"><div class="nav-icon1" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="sideBar" id="sideBarContent">
+              <form>
+                <label for="color">Выберите цвет фона</label>
+                <select id="color">
+                  <option value="#FFFFFF">Белый</option>
+                  <option value="#FDE910">Лимонный</option>
+                  <option value="	#D1E231">Грушевый</option>
+                  <option value="#FFDB58">Горчичный</option>
+                  <option value="#007BA7">Лазурный</option>
+                  <option value="#98FF98">Зелёная мята</option>
+                  <option value="#00FF00">Лаймовый</option>
+                  <option value="#CCFF00">Электрик Лайм</option>
+                  <option value="#50C878">Изумрудный</option>
+                  <option value="#fffff0">Слоновая кость</option>
+                </select>
+                <input type="button" value="Применить" onclick="changeBack()" id="button">
+              </form>
+              
+              <form class="chooseFont"> 
+                <label for="chooseFontStyle">Выберите размер шрифта</label>
+                <input type="text" id="chooseFont" value="18"  onkeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+                <input type="button" value="Применить" onclick="chooseFontSizeBtn()" id="button">
+              </form>
+              <form>
+                <label for="changeFont">Выберите шрифт</label>
+                <select id="changeFont">
+                  <option>DitedRegular</option>
+                  <option>BeerRegular</option>
+                  <option>AleksandraCRegular</option>
+                  <option>AirportRegular</option>
+                  <option>AdineKirnbergRegular</option>
+                  <option>LatoRegular</option>
+                </select>
+                <input type="button" value="Применить" onclick="chooseFontStyle()" id="button">
+              </form>
+              <form>
+                <label for="deleteLast">Удалить последний абзац</label>
+                 <input type="button" id="deleteLast" value="delete">
+               </form>
+              <div style="clear: both;"></div>
+            </div>
+          </div>
+            
+          </div>
+        </div>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div>© 2018 <span>Smart Blog.</span> </div>
+                  <div>All Rights Reserved.</div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <script src="js/main.js"></script>
+  </body>
+</html>

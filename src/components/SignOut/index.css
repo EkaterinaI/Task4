@@ -1,0 +1,20 @@
+#user_div{
+	background: #e9c000;
+	color: #fff;
+	border: 1px solid #e9c000;
+	border-radius: 3px;
+	padding: 5px;
+	display: block;
+	width: 220px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	height: 30px;
+}
+
+#user_div:hover{
+	background: #fff;
+	color: #e9c000;
+	border: 1px solid #e9c000;
+	cursor: pointer;
+}
